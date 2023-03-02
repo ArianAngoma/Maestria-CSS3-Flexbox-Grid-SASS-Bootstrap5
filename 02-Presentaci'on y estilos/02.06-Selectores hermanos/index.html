@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        /* Hermano general */
+        .article h1 ~ span {
+            color: red;
+        }
+
+        /* Hermano inmediato */
+        .article h1 + span {
+            color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+
+        <div class="article">
+            <h1>Hello World 1</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto aspernatur consectetur
+                cumque ea eius labore laborum maxime minima molestiae molestias mollitia nulla, officiis quod rem
+                veniam, voluptate voluptates?
+            </p>
+            <span>Hello</span>
+        </div>
+
+        <div class="article">
+            <h1>Hello World 2</h1>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto aspernatur consectetur
+                cumque ea eius labore laborum maxime minima molestiae molestias mollitia nulla, officiis quod rem
+                veniam, voluptate voluptates?
+            </span>
+            <span>This a text</span>
+        </div>
+
+        <div class="article">
+            <h1>Hello World 3</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto aspernatur consectetur
+                cumque ea eius labore laborum maxime minima molestiae molestias mollitia nulla, officiis quod rem
+                veniam, voluptate voluptates?
+            </p>
+            <strong>Brother</strong>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
