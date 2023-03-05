@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        /* Pseudoelementos */
+
+        /* ::before */
+
+        span::before {
+            content: "Hola";
+            color: red;
+        }
+
+        /* ::after */
+
+        span::after {
+            content: "Mundo";
+            color: blue;
+        }
+
+        /* ::first-letter */
+
+        p::first-letter {
+            color: red;
+            font-size: 2em;
+        }
+
+        /* ::first-line */
+
+        p::first-line {
+            color: blue;
+            font-size: 1.5em;
+        }
+
+        /* ::selection */
+
+        p::selection {
+            color: white;
+            background-color: red;
+        }
+
+        /* ::placeholder */
+
+        input::placeholder {
+            color: red;
+        }
+
+        /* ::marker */
+
+        ul li::marker {
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<span></span>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iusto laudantium optio voluptates! Accusantium aperiam
+    dolore eaque et excepturi harum labore modi, necessitatibus, nemo odio pariatur quas qui quia voluptates.
+</p>
+
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+</ul>
+
+</body>
+</html>
