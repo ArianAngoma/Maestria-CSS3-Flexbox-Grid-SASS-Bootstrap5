@@ -9,6 +9,59 @@
 
     <style>
 
+        /* Pseudoclases */
+
+        a:link {
+            color: red;
+        }
+
+        /* Enlace visitado */
+        a:visited {
+            color: green;
+        }
+
+        /* Enlace activo */
+        a:active {
+            color: blue;
+        }
+
+        /* Enlace hover */
+        a:hover {
+            color: orange;
+        }
+
+        /* Pseudoclases para inputs */
+
+        input:focus {
+            background-color: yellow;
+        }
+
+        input:disabled {
+            background-color: gray;
+        }
+
+        /* Pseudoclases para párrafos */
+
+        p:first-child {
+            color: red;
+        }
+
+        p:last-child {
+            color: green;
+        }
+
+        p:nth-child(2) {
+            color: blue;
+        }
+
+        /* Pseudoclase de negación */
+
+        p:not(.text-orange) {
+            color: orange;
+        }
+
+        /* Pseudoclase de atributo */
+
     </style>
 
 </head>
@@ -24,7 +77,7 @@
     iure, nostrum odit omnis provident quod temporibus, ullam velit veritatis vitae voluptates voluptatibus.
 </p>
 
-<p>
+<p class="text-orange">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet cum, ea ex explicabo harum libero natus nemo,
     nihil nobis nostrum officia officiis perspiciatis reiciendis tempora vel voluptas. Doloremque, modi.
 </p>
