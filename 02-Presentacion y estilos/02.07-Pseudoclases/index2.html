@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        /* Pseudoclases avanzados */
+
+        /* Acceder al primer elemento de un grupo */
+
+        p:first-child {
+            color: red;
+        }
+
+        /* Acceder al último elemento de un grupo */
+
+        p:last-child {
+            color: blue;
+        }
+
+        /* Acceder al elemento que está en la posición 3 */
+
+        p:nth-child(3) {
+            color: green;
+        }
+
+        /* Acceder al elemento que está en la posición 3 y es par */
+
+        p:nth-child(3n) {
+            color: green;
+        }
+
+        /* Acceder al elemento que está en la posición 3 y es impar */
+
+        p:nth-child(3n+1) {
+            color: yellow;
+        }
+
+        /* Acceder al elemento que está en la posición 3 desde el final */
+
+        p:nth-last-child(3) {
+            color: orange;
+        }
+
+        /* Acceder elemntos pares */
+
+        p:nth-child(even) {
+            color: green;
+        }
+
+        /* Acceder elemntos impares */
+
+        p:nth-child(odd) {
+            color: yellow;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, cum, cumque delectus dignissimos dolores
+        doloribus dolorum eos error esse facilis, magnam nesciunt quisquam repudiandae! Ducimus in nam omnis
+        reprehenderit similique.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio eveniet ex facilis impedit ipsa
+        iste itaque laborum, non quas qui quidem reprehenderit tempora tempore tenetur veritatis vero? Error, vitae.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor facilis magni nesciunt odit rem! Aliquid illum
+        laudantium sunt voluptate. Aperiam assumenda aut blanditiis deleniti dignissimos doloremque illum officia quas
+        soluta.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet architecto assumenda at ducimus eius in
+        iste magni, modi nisi quia quis rem repellat reprehenderit vero voluptatem! Facilis, perferendis!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, atque beatae consectetur debitis delectus earum
+        error eum excepturi facere laboriosam molestiae necessitatibus neque perspiciatis praesentium quibusdam quis
+        sapiente ullam vel.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis consequatur consequuntur dignissimos
+        distinctio dolores eligendi ex illum itaque molestiae nemo nisi non nostrum, possimus quis quos rerum, sequi
+        veniam.
+    </p>
+
+</div>
+
+</body>
+</html>
