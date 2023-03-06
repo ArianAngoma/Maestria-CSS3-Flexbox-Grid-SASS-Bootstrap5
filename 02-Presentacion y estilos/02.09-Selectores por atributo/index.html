@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        /* Selectores por atributo */
+
+        /* Selecciona todos los elementos que tengan el atributo type */
+
+        [type] {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            background-color: #ccc;
+        }
+
+        input[type="number"] {
+            background-color: violet;
+        }
+
+        /* Selecciona todos los elementos que tengan el atributo href que empiecen por www */
+
+        [href^="www"] {
+            color: red;
+        }
+
+        /* Selecciona todos los elementos que tengan el atributo href que terminen por .com */
+
+        [href$=".com"] {
+            color: green;
+        }
+
+        /* Selecciona todos los elementos que tengan el atributo href que contengan udemy */
+
+        [href*="udemy"] {
+            color: violet;
+        }
+
+        /* Selecciona todos los elementos que tengan el atributo href que contengan udemy y que empiecen por http */
+
+        [href^="http"][href*="udemy"] {
+            color: orange;
+        }
+
+        /* Selecciona todos los elementos que tengan el atributo href que terminen por .pdf */
+
+        [href$=".pdf"] {
+            color: blanchedalmond;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<input type="text">
+<input type="number">
+<input type="text">
+<input type="text">
+<input type="email">
+
+<a href="www.google.com">Google</a>
+<a href="www.udemy.com">Udemy.com</a>
+<a href="www.udemy.es">Udemy.es</a>
+<a href="http://ww.udemy.com">Udemy.com</a>
+<a href="file.pdf">Download</a>
+
+</body>
+</html>
