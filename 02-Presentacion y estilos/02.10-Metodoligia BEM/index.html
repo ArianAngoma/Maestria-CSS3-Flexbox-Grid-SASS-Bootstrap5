@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        /*
+            BEM
+            - B Block .block
+            - E Element .block__element
+            - M Modifier .block--modifier
+
+            .block {}
+
+            .block__element {}
+
+            .block--modifier {}
+
+            .block--modifier .block__element {}
+
+            .block--modifier .block__element--modifier {}
+
+            Ejemplo1:
+
+            <div class="block block--mod">...</div>
+            <div class="block block--size-big block--shadow-yes">...</div>
+
+            Ejemplo2:
+
+            <form class="form form--theme-xmas form--simple">
+              <input class="form__input" type="text" />
+              <input
+                class="form__submit form__submit--disabled"
+                type="submit" />
+            </form>
+
+            .form { }
+            .form--theme-xmas { }
+            .form--simple { }
+            .form__input { }
+            .form__submit { }
+            .form__submit--disabled { }
+
+            Ejemplo3:
+
+            <button class="button">
+                Normal button
+            </button>
+            <button class="button button--state-success">
+                Success button
+            </button>
+            <button class="button button--state-danger">
+                Danger button
+            </button>
+
+            .button {
+                display: inline-block;
+                border-radius: 3px;
+                padding: 7px 12px;
+                border: 1px solid #D5D5D5;
+                background-image: linear-gradient(#EEE, #DDD);
+                font: 700 13px/18px Helvetica, arial;
+            }
+            .button--state-success {
+                color: #FFF;
+                background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
+                border-color: #4A993E;
+            }
+            .button--state-danger {
+                color: #900;
+            }
+
+        */
+
+        /* BLOCK */
+        .box {
+            width: 200px;
+            background: lightskyblue;
+            padding: 40px;
+            margin: 20px;
+        }
+
+        /* ELEMENT */
+        .box__btn {
+            width: 100px;
+            height: 40px;
+            background: rgb(2, 68, 153);
+            border: none;
+            color: #FFF;
+        }
+
+        /* MODIFIER */
+        .box--danger {
+            background: red;
+        }
+
+        .box__btn--danger {
+            background: #600909;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda at autem cum debitis delectus
+        dolorem, ducimus eum magnam omnis optio possimus quas rem, vel voluptas voluptate, voluptatum? Iusto, maiores?
+    </p>
+
+    <button class="box__btn">
+        Click me
+    </button>
+</div>
+
+<div class="box">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad dolore eligendi hic illo ipsam, ipsum,
+        laudantium modi mollitia non officiis perferendis rem reprehenderit similique suscipit ullam veritatis vitae
+        voluptatum!
+    </p>
+
+    <button class="box__btn">
+        Click me
+    </button>
+</div>
+
+<div class="box box--danger">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur doloremque error harum labore molestiae
+        pariatur. Aspernatur consequuntur magnam quibusdam. Accusantium aliquid distinctio esse incidunt molestiae
+        obcaecati quo, quos suscipit voluptatem!
+    </p>
+
+    <button class="box__btn box__btn--danger">
+        Click me
+    </button>
+</div>
+
+<section class="box">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur doloribus dolorum eum, explicabo
+        incidunt laboriosam numquam obcaecati quis rerum sequi sint sit ut, vero voluptas voluptate voluptatum.
+        Sapiente, sit?
+    </p>
+
+    <button class="box__btn">
+        Click me
+    </button>
+</section>
+
+</body>
+</html>
