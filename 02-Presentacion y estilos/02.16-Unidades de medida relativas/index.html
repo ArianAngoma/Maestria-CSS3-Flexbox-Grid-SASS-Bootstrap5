@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        :root {
+            font-size: 50px;
+        }
+
+        body {
+            font-size: 20px;
+        }
+
+        h1 {
+            /* rem - Relativo al tamaño de la fuente del elemento raíz, en este caso el :root */
+            font-size: 3rem;
+
+            /* em - Relativo al tamaño de la fuente del elemento padre, en este caso el body */
+            font-size: 2em;
+
+            /* ex - Mitad de la altura de la fuente del elemento padre, en este caso el body */
+            font-size: 2ex;
+
+            /* ch - Ancho de la letra 0 (cero) del elemento padre, en este caso el body */
+            font-size: 2ch;
+        }
+
+        /* Relativo - Flexibles */
+        div {
+            width: 50%; /* 50% del ancho del elemento padre, en este caso el body */
+            height: 200px;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Hello World</h1>
+<div></div>
+
+</body>
+</html>
